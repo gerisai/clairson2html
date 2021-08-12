@@ -18,7 +18,7 @@ jsonReport.vulnerabilities.forEach((vul,i) => {
             <div class="accordion-body">
                 <ul>
                     <li><strong>Package Version:</strong> ${vul.featureversion}</li>
-                    <li><strong>Link:</strong> ${vul.link}</li>
+                    <li><strong>Link:</strong> <a href="${vul.link}">${vul.link}</a></li>
                     <li><strong>Fixed by:</strong> ${vul.fixedby}</li>
                 </ul>
                 ${vul.description}
